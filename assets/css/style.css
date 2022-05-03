@@ -7,6 +7,10 @@
 
     /* global for titles*/
 
+    body h1, h3, h4, p {
+        color: var(--primary-color);
+    }
+
     header {
         display: flex;
         flex-wrap: wrap;
@@ -25,6 +29,7 @@ color: var(--primary-color);
 background-color: var(--secondary-color);
 text-align: right;
 font-size: 50px;
+
 
 }
 
@@ -71,21 +76,37 @@ header nav {
 
   /* start of bio*/
 
-.box-back {
+.box-back div {
     background-color: var(--secondary-color);  
 }
 
-.box-border {
+.box-border div {
     border: 3px solid var(--secondary-color);
+    border-left: 2px solid var(--primary-color);
+    padding: 20px 35px;
 }
 
-.bio-flex {
+.bio-flex div {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .bio-font h1 {
     font-size: 50px;
+    
 }
-.bio-font h1, h3, h4, p {
-    color: var(--primary-color);
+.all-bio {
+
+}
+
+.four-bio {
+
+}
+
+footer {
+display: flex;
+}
+footer nav {
+    border-left: 2px solid var(--primary-color);
 }
