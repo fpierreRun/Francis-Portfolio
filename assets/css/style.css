@@ -1,0 +1,22 @@
+
+:root {
+    --primary-color: #445776;
+    --secondary-color: #92cacd;
+    --tertiary-color: #39a6b2;
+}
+
+    /* global for titles*/
+
+    header {
+        background-color: var(--primary-color);
+    }
+
+header h1 {
+color: var(--primary-color);
+background-color: var(--secondary-color);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
