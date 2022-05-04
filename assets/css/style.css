@@ -82,28 +82,63 @@ header nav {
 
 .box-border div {
     border: 3px solid var(--secondary-color);
-    border-left: 2px solid var(--primary-color);
     padding: 20px 35px;
+    margin: 7px 7px;
+}
+
+.bio-borer {
+    border-left: 2px solid var(--primary-color);
+}
+
+.bio-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bio-flex ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bio-flex section {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .bio-flex div {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .bio-font h1 {
     font-size: 50px;
-    
 }
 .all-bio {
 
 }
 
 .four-bio {
-
+width: auto;
 }
 
+#lg-bio {
+    background-image: url('../images/Small town.jpeg'); 
+ }
+
+#four-bio1 {
+   background-image: url('../images/Small town.jpeg'); 
+}
+
+#four-bio2 {
+    background-image: url('../images/Small town.jpeg'); 
+ }
+
+ #four-bio3 {
+    background-image: url('../images/Small town.jpeg'); 
+ }
+
+ #four-bio4 {
+    background-image: url('../images/Small town.jpeg'); 
+ }
 footer {
 display: flex;
 }
