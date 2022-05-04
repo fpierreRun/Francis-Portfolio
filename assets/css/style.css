@@ -2,7 +2,7 @@
 :root {
     --primary-color: #445776;
     --secondary-color: #92cacd;
-    --tertiary-color: #39a6b2;
+    --tertiary-color: #f3f3f3;
 }
 
     /* global for titles*/
@@ -11,24 +11,31 @@
         color: var(--primary-color);
     }
 
+    body p {
+        word-wrap: break-word;
+        width: 50em; 
+    }
+
     header {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 20px;
+        align-items: center;
         position: -webkit-sticky;
         position: sticky;
         top: 0;
         z-index: 9999;
         background-color: var(--primary-color);
-        height: 70px;
+        height: auto;
     }
 
 header h1 {
+    display: flex;
 color: var(--primary-color);
 background-color: var(--secondary-color);
-text-align: right;
+text-align: right,center;
 font-size: 50px;
+
 
 
 }
@@ -72,6 +79,16 @@ header nav {
   background-position: 80%;
    
 }
+
+.hero-text {
+    display: flex;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    text-align: right,center;
+    font-size: 30px;
+    margin-right: 50px;
+
+}
   /* end of hero*/
 
   /* start of bio*/
@@ -86,8 +103,13 @@ header nav {
     margin: 7px 7px;
 }
 
-.bio-borer {
-    border-left: 2px solid var(--primary-color);
+.bio-border {
+    border-right: 3px solid var(--primary-color);
+    padding: 20px;
+    word-wrap: break-word;
+    width: 4em; 
+    text-align: right;
+    
 }
 
 .bio-flex {
@@ -111,6 +133,7 @@ header nav {
 }
 .bio-font h1 {
     font-size: 50px;
+    margin-right: 40px;
 }
 .all-bio {
 
@@ -139,9 +162,36 @@ width: auto;
  #four-bio4 {
     background-image: url('../images/Small town.jpeg'); 
  }
-footer {
-display: flex;
+
+ footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--tertiary-color);
+    height: auto;
+ }
+
+ footer a {
+    text-decoration: none;
+    color: var(--primary-color);
 }
+
 footer nav {
-    border-left: 2px solid var(--primary-color);
-}
+    display: flex;
+    justify-content: space-between;
+    margin: 7px 0;
+  }
+
+  footer nav ul {
+    display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+  }
+
+  footer nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    margin: 50px;
