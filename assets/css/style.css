@@ -1,6 +1,6 @@
 
 :root {
-    --primary-color: #445776;
+    --primary-color: #3e4d66;
     --secondary-color: #92cacd;
     --tertiary-color: #f3f3f3;
 }
@@ -10,11 +10,22 @@
     body h1, h3, h4, p {
         color: var(--primary-color);
     }
+ Body h3 {
+font-size: 30px;
 
+ }
+body h3, h4 {
+    line-height: .01;
+}
     body p {
         word-wrap: break-word;
         width: 50em; 
     }
+
+    .clearfix::after {
+        overflow: auto;
+    }
+
 
     header {
         display: flex;
@@ -48,7 +59,7 @@ header a {
 header nav {
     display: flex;
     justify-content: space-between;
-    margin: 7px 0;
+    margin: 7px 50px;
   }
 
   header nav ul {
@@ -98,13 +109,16 @@ header nav {
 }
 
 .box-border div {
-    border: 3px solid var(--secondary-color);
-    padding: 20px 35px;
-    margin: 7px 7px;
+    border: 5px solid var(--secondary-color);
+   
+}
+
+.box-border div div {
+    align-items: flex-start;
 }
 
 .bio-border {
-    border-right: 3px solid var(--primary-color);
+    border-right: 5px solid var(--primary-color);
     padding: 20px;
     word-wrap: break-word;
     width: 4em; 
@@ -117,27 +131,15 @@ header nav {
     flex-wrap: wrap;
 }
 
-.bio-flex ul {
-    display: flex;
-    flex-wrap: wrap;
+.bio-font {
+    background-color: var(--tertiary-color);
 }
 
-.bio-flex section {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.bio-flex div {
-    display: flex;
-    flex-wrap: wrap;
-}
 .bio-font h1 {
     font-size: 50px;
     margin-right: 40px;
 }
-.all-bio {
 
-}
 
 .four-bio {
 width: auto;
@@ -145,29 +147,55 @@ width: auto;
 
 #lg-bio {
     background-image: url('../images/Small town.jpeg'); 
+    height: 80;
+    margin: 7px 7px;
+    height: 300px;
+
  }
 
 #four-bio1 {
    background-image: url('../images/Small town.jpeg'); 
+   width: 700px;
+   margin: 7px 7px;
+   height: 200px;
 }
 
 #four-bio2 {
-    background-image: url('../images/Small town.jpeg'); 
+    background-image: url('../images/Small town.jpeg');
+    width: 700px; 
+    margin: 7px 7px;
+    height: 200px;
  }
 
  #four-bio3 {
     background-image: url('../images/Small town.jpeg'); 
+    width: 700px;
+    margin: 7px 7px;
+    height: 200px;
  }
 
  #four-bio4 {
     background-image: url('../images/Small town.jpeg'); 
+    width: 700px;
+    margin: 7px 7px;
+    height: 200px;
+ }
+
+ .blue-box div {
+flex-wrap: wrap;
+    position: relative;
+    left: 0px;
+    width: 200px;
+    margin-bottom: 20px;
+   
+  
+ 
  }
 
  footer {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: var(--tertiary-color);
     height: auto;
  }
 
@@ -178,14 +206,14 @@ width: auto;
 
 footer nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 7px 0;
   }
 
   footer nav ul {
     display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       list-style: none;
   }
@@ -195,3 +223,16 @@ footer nav {
     font-weight: lighter;
     font-size: 1.55vw;
     margin: 50px;
+  }
+
+  /* Pseudo states*/
+
+  header nav ul li a:hover {
+    color: var(--secondary-color);
+    border-bottom: 5px solid var(--secondary-color);
+  }
+
+  footer nav ul li a:hover {
+    color: var(--primary-color);
+    border-bottom: 5px solid var(--primary-color);
+  }
