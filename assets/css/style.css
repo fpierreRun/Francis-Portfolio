@@ -243,8 +243,7 @@ footer nav {
 
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
-  @media screen and (max-width: 980px) {
-    
+  @media screen and (max-width: 980px) { 
     .bio-border {
         border-width: 0px 0px 5px 0px;
         border-style: solid;
@@ -254,15 +253,14 @@ footer nav {
 
     .bio-font {
         text-align: center;
-    padding:unset;}
-    }
-    
+    padding:unset;
+        }
+
     .bio-font h1 {
         font-size: 30px;
         margin-right: 0px;
         width: 50%;
-        text-align: center;
-        
+        text-align: center;  
     }
 
     #lg-bio {
@@ -295,22 +293,27 @@ footer nav {
         height: auto;
      }
     
-     .blue-box div {
-        width: 100%;
+     .blue-box {
+        width: 50%;
         margin: 4px 4px;
         height: auto;
      }
     
-     .blue-box div {
-        flex-wrap: wrap;
-            position: relative;
-            left: 0px;
-            width: 60%;
-            margin-bottom: 20px;
+     .blue-box div h3 {
+        font-size: 18px;
      }
 
-     body ul {
-         font-size: 20px;
-     }
+     header h1 {
+    text-align: left;
+    font-size: 40px;
+    word-wrap: break-word;
+    width: 6em; 
 
+    }
+
+    header a {
+        text-decoration: none;
+        color: var(--secondary-color);
+        font-size: 15px;
+    }
 }
