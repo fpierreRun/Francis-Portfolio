@@ -42,6 +42,8 @@ body h3, h4 {
 
 header h1 {
     display: flex;
+    justify-content: center;
+  flex-wrap: wrap;
 color: var(--primary-color);
 background-color: var(--secondary-color);
 text-align: right,center;
@@ -82,11 +84,11 @@ header nav {
     height: 100px;
     display:flex;
     justify-content: right;
-    background-image: url('../images/Small town.jpeg');
-    background-size: cover;
-  background-position: center;
+    background-image: url('../images/DioneWild.jpeg');
+    background-size:cover;
+  background-position:inherit;
   align-items: flex-start;
-  background-attachment: fixed;
+  background-attachment:scroll;
   background-position: 80%;
    
 }
@@ -105,7 +107,8 @@ header nav {
   /* start of bio*/
 
 .box-back div {
-    background-color: var(--secondary-color);  
+    background-color: var(--secondary-color); 
+     
 }
 
 button {
@@ -130,6 +133,8 @@ button div {
 .bio-flex {
     display: flex;
     flex-wrap: wrap;
+    justify-content: start;
+    width: 100%;
 }
 
 .bio-font {
@@ -147,7 +152,7 @@ width: auto;
 }
 
 #lg-bio {
-    background-image: url('../images/Small town.jpeg'); 
+    background-image: url('../images/ColoradoRanchHouse.jpeg'); 
     margin: 7px 7px;
     height: 300px;
     width: 1415px;
@@ -233,3 +238,79 @@ footer nav {
     color: var(--primary-color);
     border-bottom: 5px solid var(--primary-color);
   }
+
+  
+
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+
+  @media screen and (max-width: 980px) {
+    
+    .bio-border {
+        border-width: 0px 0px 5px 0px;
+        border-style: solid;
+        word-wrap:normal;
+    width: 10em; 
+    }
+
+    .bio-font {
+        text-align: center;
+    padding:unset;}
+    }
+    
+    .bio-font h1 {
+        font-size: 30px;
+        margin-right: 0px;
+        width: 50%;
+        text-align: center;
+        
+    }
+
+    #lg-bio {
+        width: 100%;
+        margin: 4px 4px;
+        height: auto;
+     }
+    
+    #four-bio1 {
+        width: 100%;
+        margin: 4px 4px;
+        height: auto;
+    }
+    
+    #four-bio2 {
+        width: 100%;
+        margin: 4px 4px;
+        height: auto;
+     }
+    
+     #four-bio3 {
+        width: 100%;
+        margin: 4px 4px;
+        height: auto;
+     }
+    
+     #four-bio4 {
+        width: 100%;
+        margin: 4px 4px;
+        height: auto;
+     }
+    
+     .blue-box div {
+        width: 100%;
+        margin: 4px 4px;
+        height: auto;
+     }
+    
+     .blue-box div {
+        flex-wrap: wrap;
+            position: relative;
+            left: 0px;
+            width: 60%;
+            margin-bottom: 20px;
+     }
+
+     body ul {
+         font-size: 20px;
+     }
+
+}
