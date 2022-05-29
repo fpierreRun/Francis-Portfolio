@@ -133,8 +133,17 @@ button div {
 .bio-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content:start;
     width: 100%;
+
+}
+
+.bio-flex div {
+font-size: 14px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-content: center;
 }
 
 .bio-font {
@@ -166,7 +175,7 @@ width: auto;
 }
 
 #four-bio2 {
-    background-image: url('../images/Small town.jpeg');
+    background-image: url('../images/BeerPic2.png');
     width: 700px; 
     margin: 7px 7px;
     height: 200px;
