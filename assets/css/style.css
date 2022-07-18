@@ -113,6 +113,7 @@ header nav {
 
 button {
     border: 5px solid var(--secondary-color);
+    cursor: pointer;
    
 }
 
@@ -168,7 +169,7 @@ width: auto;
  }
 
 #four-bio1 {
-   background-image: url('../images/Small town.jpeg'); 
+   background-image: url('../images/reccomend.png'); 
    width: 700px;
    margin: 7px 7px;
    height: 200px;
@@ -189,7 +190,7 @@ width: auto;
  }
 
  #four-bio4 {
-    background-image: url('../images/Small town.jpeg'); 
+    background-image: url('../images/runbuddy.png'); 
     width: 700px;
     margin: 7px 7px;
     height: 200px;
