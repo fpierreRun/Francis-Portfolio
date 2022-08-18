@@ -93,6 +93,10 @@ header nav {
    
 }
 
+article {
+clear: right;
+
+}
 .hero-text {
     display: flex;
     color: var(--primary-color);
@@ -136,6 +140,7 @@ button div {
     flex-wrap: wrap;
     justify-content:start;
     width: 100%;
+    clear:;
 
 }
 
